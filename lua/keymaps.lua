@@ -5,6 +5,11 @@
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+-- Remap 'kj' to <Esc> in insert-mode
+local noremap = { noremap = true }
+vim.keymap.set('i', 'kj', '<Esc>', noremap)
+vim.keymap.set('i', '{<CR>', '{<CR>}<ESC>O', noremap)
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
