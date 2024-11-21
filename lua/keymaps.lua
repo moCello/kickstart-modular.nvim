@@ -10,10 +10,6 @@ local noremap = { noremap = true }
 vim.keymap.set('i', 'kj', '<Esc>', noremap)
 vim.keymap.set('i', '{<CR>', '{<CR>}<ESC>O', noremap)
 
--- Cycle between buffers
-vim.keymap.set('n', '<Leader>n', ':bn<CR>', { desc = 'Toggle [n]ext buffer' })
-vim.keymap.set('n', '<Leader>p', ':bp<CR>', { desc = 'Toggle [p]ext buffer' })
-
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
