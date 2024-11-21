@@ -20,13 +20,10 @@ require('lazy').setup({
   -- Use `opts = {}` to force a plugin to be loaded.
   --
 
-
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
   require 'kickstart/plugins/gitsigns',
-
-  require 'kickstart/plugins/which-key',
 
   require 'kickstart/plugins/telescope',
 
@@ -36,11 +33,7 @@ require('lazy').setup({
 
   require 'kickstart/plugins/cmp',
 
-  require 'kickstart/plugins/tokyonight',
-
   require 'kickstart/plugins/todo-comments',
-
-  require 'kickstart/plugins/mini',
 
   require 'kickstart/plugins/treesitter',
 
@@ -53,6 +46,9 @@ require('lazy').setup({
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
+  -- require 'kickstart/plugins/which-key',
+  -- require 'kickstart/plugins/tokyonight',
+  -- require 'kickstart/plugins/mini',
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
